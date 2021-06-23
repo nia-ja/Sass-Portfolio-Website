@@ -1,0 +1,23 @@
+{
+  "name": "sass-portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nia-ja/Sass-Portfolio-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nia-ja/Sass-Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/nia-ja/Sass-Portfolio-Website#readme",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}
