@@ -90,10 +90,78 @@ img {
         font-size: 4rem;
         line-height: 1.2;
       }
+      // Static cursor
+      //   .txt-type .txt {
+      //     border-right: 0.2rem solid $main-color;
+      //   }
+
+      //   additional span in html needed
+      .blinking-cursor {
+        font-weight: 100;
+        font-size: 4rem;
+        animation: 1s blink step-end infinite;
+      }
+
+      @keyframes blink {
+        from,
+        to {
+          color: $main-color;
+        }
+        50% {
+          color: transparent;
+        }
+      }
     }
   }
 
-  //   Header Inner
+  // Header Inner
   &-inner {
+  }
+}
+
+// Home Sections
+#home {
+  // Home Section A
+  &-a {
+    .specials {
+      margin-top: 3rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+
+      .fas {
+        color: $main-color;
+        padding-bottom: 0.4rem;
+      }
+    }
+  }
+  // Home Section B
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      li {
+        line-height: 2;
+
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+
+        &.stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+
+      div {
+        &:nth-child(odd) {
+          background-color: $light-color;
+        }
+        &:nth-child(even) {
+          background-color: $medium-color;
+        }
+      }
+    }
   }
 }
