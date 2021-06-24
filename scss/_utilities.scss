@@ -90,6 +90,26 @@ input[class^="btn-"]:hover {
   }
 }
 
+// Backgrounds
+.bg {
+  &-main {
+    background: $main-color;
+    color: set-text-color($main-color);
+  }
+  &-light {
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-medium {
+    background: $medium-color;
+    color: set-text-color($medium-color);
+  }
+  &-dark {
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+}
+
 .bottom-line {
   height: 2px;
   width: 3rem;
