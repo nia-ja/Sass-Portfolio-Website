@@ -452,9 +452,31 @@ img {
 }
 #contact-a .text-fields .text-input {
   padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+#contact-a .text-fields .text-input:hover, #contact-a .text-fields .text-input:focus {
+  box-shadow: 0 3px 6px 0 rgba(204, 204, 204, 0.25);
+}
+#contact-a .text-fields .text-input:focus {
+  border: 1px solid #ffbc00;
+  outline: none;
 }
 #contact-a button[type=submit] {
   width: 50%;
+}
+#contact-b .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+#contact-b .contact-info div > *:first-child,
+#contact-b .contact-info div > *:nth-child(2) {
+  margin-bottom: 0.7rem;
+}
+#contact-c h1 {
+  text-align: center;
+  font-size: 4rem;
 }
 
 #main-footer {

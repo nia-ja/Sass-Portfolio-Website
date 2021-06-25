@@ -357,11 +357,43 @@ img {
 
       .text-input {
         padding: 0.5rem 1rem;
+        border: 1px solid $medium-color;
+        border-radius: 2px;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 3px 6px 0 rgba(204, 204, 204, 0.25);
+        }
+
+        &:focus {
+          border: 1px solid $main-color;
+          outline: none;
+        }
       }
     }
 
     button[type="submit"] {
       width: 50%;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+
+      div > *:first-child,
+      div > *:nth-child(2) {
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+
+  &-c {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
     }
   }
 }
